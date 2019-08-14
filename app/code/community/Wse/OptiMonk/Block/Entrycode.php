@@ -40,7 +40,7 @@ class Wse_OptiMonk_Block_Entrycode extends Mage_Core_Block_Template
      */
     public function getId()
     {
-        return $this->getModuleHelper()->getId();
+        return trim($this->getModuleHelper()->getId());
     }
 
     /**

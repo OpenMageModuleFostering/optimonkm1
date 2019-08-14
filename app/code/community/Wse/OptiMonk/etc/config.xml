@@ -65,7 +65,6 @@
                 </observers>
             </core_block_abstract_to_html_after>
         </events>
-
     </frontend>
 
     <adminhtml>
@@ -88,6 +87,17 @@
                 </admin>
             </resources>
         </acl>
+        <events>
+            <admin_system_config_changed_section_optimonk>
+                <observers>
+                    <optimonk_observer>
+                        <type>singleton</type>
+                        <class>Wse_OptiMonk_Model_Observer</class>
+                        <method>sendDataToOptimonk</method>
+                    </optimonk_observer>
+                </observers>
+            </admin_system_config_changed_section_optimonk>
+        </events>
     </adminhtml>
 
     <default>

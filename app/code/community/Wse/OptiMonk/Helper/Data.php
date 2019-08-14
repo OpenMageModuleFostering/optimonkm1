@@ -45,7 +45,7 @@ class Wse_Optimonk_Helper_Data extends Mage_Core_Helper_Abstract
      */
     public function getId()
     {
-        return $this->getConfigValue('id');
+        return trim($this->getConfigValue('id'));
     }
 
     /**

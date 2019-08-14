@@ -19,7 +19,7 @@
  * @license     https://www.gnu.org/licenses/gpl-3.0.html GNU GENERAL PUBLIC LICENSE (GPL 3.0)
  * @author      Tibor Berna
  */
-class Wse_OptiMonk_Model_Observer
+class Wse_OptiMonk_Model_Observer extends Mage_Core_Model_Session_Abstract
 {
     /**
      * Listen to the event core_block_abstract_to_html_after
@@ -51,6 +51,31 @@ class Wse_OptiMonk_Model_Observer
         }
 
         return $this;
+    }
+
+    /**
+     * Logging plugin install
+     */
+    public function sendDataToOptimonk()
+    {
+        $url = 'https://front.optimonk.com/apps/magento/connect';
+        $domain = parse_url(Mage::getBaseUrl( Mage_Core_Model_Store::URL_TYPE_WEB));
+
+        $data = array(
+            "user" => trim($this->getModuleHelper()->getId()),
+            "domain" => $domain['host'],
+            "version" => Mage::getVersion()
+        );
+
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+        curl_setopt($ch, CURLOPT_USERAGENT, "Magento OM plugin");
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_exec($ch);
     }
 
     /**
