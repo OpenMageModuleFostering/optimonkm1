@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<package>
+    <name>OptiMonkM1</name>
+    <version>1.0.1</version>
+    <stability>stable</stability>
+    <license uri="https://www.gnu.org/licenses/gpl-3.0.html">GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension allows you to integrate OptiMonk with your Site</summary>
+    <description>OptiMonk is the most powerful Onsite Retargeting platform, that helps you increase the conversion rate of your site, and get more leads by recovering lost visitors.&#xD;
+&#xD;
+Exit offers provides you a powerful and simple way to convert more visitors to buyers and build your email list. Your messages show up with a special offer at the exact moment a visitor is about to leave your site &#x2013; down to the millisecond. Basically you get a second chance to convince your visitors.&#xD;
+&#xD;
+Why is OptiMonk more advanced than other exit offer tools?&#xD;
+&#xD;
+Other exit offer tools will just allow you to show your visitors a coupon code or discount once, and then you can just hope, that the visitors will remember these coupon codes.&#xD;
+&#xD;
+OptiMonk allows you to build 2-step campaigns:&#xD;
+Exit offer: First you can get the visitor&#x2019;s attention (and email) with an exit offer&#xD;
+Nanobar: Then you can display a nanobar at once, reminding the visitor of the coupon code without distracting her shopping.&#xD;
+With this 2-step campaign you can increase the number of purchases by up to 100% compared to simple exit offer tools.&#xD;
+Basic features:&#xD;
+Create Unlimited Offers&#xD;
+Lots of Premium Templates to Choose From&#xD;
+Easy Customization with WYSWYG editor&#xD;
+Display Offers on Exit-Intent, On Scroll, On Entry or After X Seconds&#xD;
+Integration with MailChimp, GetResponse, iContact, AWeber, InfusionSoft, etc.&#xD;
+No coding required&#xD;
+Advanced features:&#xD;
+Multi-Page Popups&#xD;
+Mobile-Optimized and Responsives Popups&#xD;
+Nanobar&#xD;
+Campaign Scheduling&#xD;
+Geo-Targeting&#xD;
+A/B Testing&#xD;
+Here are a few case studies you might be interested in:&#xD;
+An ebike store was able to increase their subscription rate by 329%&#xD;
+A toy retailer was able to increase its revenue by 26,8%&#xD;
+A marketing guru was able to increase its subscription rate by 48%&#xD;
+An adult store was able to decrease its cart-abandonment rate by 27.6%&#xD;
+A marketing agency was able to increase the number of leads by 45%&#xD;
+A B2B Security Startup was able to increase the number of free trials by 65%</description>
+    <notes>Minor Copyright Information changes&#xD;
+Extension set to Disabled by default</notes>
+    <authors><author><name>J&#xE1;nos G&#xE1;l</name><user>galjanos</user><email>janos.gal@optimonk.com</email></author><author><name>Tibor Berna</name><user>optimonk_tberna</user><email>bernatibor@webshopexperts.hu</email></author></authors>
+    <date>2016-06-28</date>
+    <time>11:53:03</time>
+    <contents><target name="magecommunity"><dir name="Wse"><dir name="OptiMonk"><dir name="Block"><file name="Cart.php" hash="e9c6c7b3c1f008c9d30a2af0563bd327"/><file name="Entrycode.php" hash="e9372c7e7928a9f52365380a413821d1"/></dir><dir name="Helper"><file name="Data.php" hash="e2aca25679b0b2a0a3d5379d13b1c1ba"/></dir><dir name="Model"><file name="Container.php" hash="f49913afdf86a3e939bb5b175131761f"/><file name="Observer.php" hash="4012a959b2f496df91ac263fa55448dd"/></dir><dir name="etc"><file name="config.xml" hash="bc26b949fcf8921e07ea21a3a0fc1d7a"/><file name="system.xml" hash="16b146b2ce4d56ec0e213c3cf116815a"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="optimonk.xml" hash="df83174e9a32cb5067c5be6cdae55807"/><file name="optimonk.xml" hash="df83174e9a32cb5067c5be6cdae55807"/></dir><dir name="template"><dir name="optimonk"><file name="cart.phtml" hash="0133d4b7c3165d2cc1340f889d2d5a2b"/><file name="entrycode.phtml" hash="bb5c9d3081d2bf407f662e959844e7a3"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Wse_OptiMonk.xml" hash="79495d9c78d2e99a4095f18173528d11"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.5.0</min><max>7.0.0</max></php></required></dependencies>
+</package>
