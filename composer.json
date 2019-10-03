@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/OptiMonkM1",
+    "name": "OpenMageModuleFostering\/OptiMonkM1",
     "type": "magento-module",
     "license": "GPL",
     "homepage": "",
     "description": "This extension allows you to integrate OptiMonk with your Site",
     "authors": [
-    {
-        "name": "J\u00e1nos G\u00e1l",
-        "email": "janos.gal@optimonk.com"
-    }
-],
+        {
+            "name": "J\u00e1nos G\u00e1l",
+            "email": "janos.gal@optimonk.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
